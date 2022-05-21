@@ -2,51 +2,51 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-order', 'stylelint-config-prettier'],
   plugins: ['stylelint-order'],
   rules: {
-    indentation: 4,
+    indentation: 2,
     'no-descending-specificity': null,
     'selector-class-pattern': null,
     'selector-pseudo-class-no-unknown': [
       true,
       {
-        ignorePseudoClasses: ['global'],
-      },
+        ignorePseudoClasses: ['global']
+      }
     ],
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep'],
-      },
+        ignorePseudoElements: ['v-deep']
+      }
     ],
     // 禁止使用未知的 at 规则
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen', 'function', 'if', 'each', 'include', 'mixin', 'extend', 'content'],
-      },
+        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen', 'function', 'if', 'each', 'include', 'mixin', 'extend', 'content']
+      }
     ],
     'rule-empty-line-before': [
       // 要求或禁止在规则声明之前有空行
       'always-multi-line',
       {
         except: ['first-nested'],
-        ignore: ['after-comment'],
-      },
+        ignore: ['after-comment']
+      }
     ],
     'at-rule-empty-line-before': [
       // 要求或禁止在 at 规则之前有空行
       'always',
       {
         except: ['blockless-after-same-name-blockless', 'first-nested'],
-        ignore: ['after-comment'],
-      },
+        ignore: ['after-comment']
+      }
     ],
     'comment-empty-line-before': [
       // 要求或禁止在注释之前有空行
       'always',
       {
         except: ['first-nested'],
-        ignore: ['stylelint-commands'],
-      },
+        ignore: ['stylelint-commands']
+      }
     ],
     'no-empty-source': null,
     'named-grid-areas-no-invalid': null,
@@ -75,8 +75,8 @@ module.exports = {
     'rule-empty-line-before': [
       'always',
       {
-        ignore: ['after-comment', 'first-nested'],
-      },
+        ignore: ['after-comment', 'first-nested']
+      }
     ],
     'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],
     'order/order': [
@@ -87,16 +87,16 @@ module.exports = {
         'declarations',
         {
           type: 'at-rule',
-          name: 'supports',
+          name: 'supports'
         },
         {
           type: 'at-rule',
-          name: 'media',
+          name: 'media'
         },
-        'rules',
+        'rules'
       ],
-      { severity: 'warning' },
-    ],
+      { severity: 'warning' }
+    ]
   },
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts']
 }
