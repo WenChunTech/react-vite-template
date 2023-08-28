@@ -13,7 +13,7 @@
     "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
     "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "format": "prettier .  --write",
-    "pre-check": "tsc && npx lint-staged",
+    "pre-check": "tsc && pnpm lint-staged",
     "postinstall": "husky install"
   },
   "lint-staged": {
