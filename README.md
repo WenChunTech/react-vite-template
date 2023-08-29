@@ -30,8 +30,10 @@
     1.3 rules: 规则
     1.4 parserOptions: 解析器配置
     1.5 env: 环境
-    1.6 settings: 设置
-
+    1.6 settings: 设置, 例如设置React版本,不然会有警告
+    
+    > 注: prettier是eslint-config-prettier的缩写
+    
 2. .prettierrc.js: Prettier 配置文件
     2.1 printWidth: 每行代码长度（默认80）
     2.2 tabWidth: 每个tab相当于多少个空格（默认2）
@@ -42,3 +44,7 @@
     3.2 plugins: 插件
     3.3 rules: 规则
     3.4 ignoreFiles: 忽略的文件
+
+## 参考链接
+
+1. [cz-customizable - npm (npmjs.com)](https://www.npmjs.com/package/cz-customizable)

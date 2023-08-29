@@ -12,7 +12,12 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:prettier/recommended'
   ],
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'react-refresh'],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
@@ -23,6 +28,9 @@ module.exports = {
     }
   },
   rules: {
+    'react-hooks/rules-of-hooks': 'error', // 检查 Hook 的规则
+    'react-hooks/exhaustive-deps': 'warn', // 检查 effect 的依赖
+    'react-refresh/only-export-components': 'warn',
     'react/self-closing-comp': ['error'], // 自闭合
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
