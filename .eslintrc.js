@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
+    "@unocss",
     'plugin:prettier/recommended'
   ],
   plugins: ['react', '@typescript-eslint', 'react-hooks', 'react-refresh'],
@@ -34,6 +35,7 @@ module.exports = {
     'react/self-closing-comp': ['error'], // 自闭合
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "react/no-unknown-property": "off", // 解决react和unocss冲突
     'no-unused-vars': [
       2,
       {
