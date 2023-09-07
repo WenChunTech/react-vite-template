@@ -1,8 +1,9 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-order', 'stylelint-config-prettier', 'stylelint-config-standard-scss'],
-  // plugins: ['stylelint-order'],
+  plugins: ['stylelint-order'],
   rules: {
     indentation: 2,
+    'selector-anb-no-unmatchable': false,
     'no-descending-specificity': null,
     'selector-class-pattern': null,
     'selector-pseudo-class-no-unknown': [

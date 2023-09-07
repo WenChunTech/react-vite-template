@@ -11,7 +11,6 @@
     "prettier": "prettier --write  src/**/*.{js,json,ts,tsx,css,less,scss,vue,html,md}",
     "stylelint": "stylelint --cache --fix **/*.{vue,less,postcss,css,scss} --cache --cache-location node_modules/.cache/stylelint/",
     "lint-staged": "lint-staged",
-    "format": "prettier .  --write",
     "pre-check": "tsc && pnpm lint-staged",
     "postinstall": "husky install",
     "commit": "cz"

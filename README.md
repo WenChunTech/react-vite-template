@@ -36,37 +36,55 @@
 ### 配置说明
 
 1. .eslintrc.js: ESLint 配置文件
+
     1.1 extends: 继承的规则
+
     1.2 plugins: 插件
+
     1.3 rules: 规则
+
     1.4 parserOptions: 解析器配置
+
     1.5 env: 环境
+
     1.6 settings: 设置, 例如设置React版本,不然会有警告
 
     > 注: prettier是eslint-config-prettier的缩写
 
 2. .prettierrc.js: Prettier 配置文件
+
     2.1 printWidth: 每行代码长度（默认80）
+
     2.2 tabWidth: 每个tab相当于多少个空格（默认2）
+
     2.3 ......
 
 3. .stylelintrc.js: Stylelint 配置文件
+
     3.1 extends: 继承的规则
+
     3.2 plugins: 插件
+
     3.3 rules: 规则
+
     3.4 ignoreFiles: 忽略的文件
 
 4. .commitlintrc.js: Commitlint 配置文件
+
     4.1 extends: 继承的规则
+
     4.2 rules: 规则
 
 5. .czrc: Commitizen 配置文件
+
     5.1 path: Commitizen 自定义配置文件路径(可选: node_modules/commitizen, node_modules/cz-customizable, node_modules/cz-conventional-changelog,)
 
 6. .cz-config.js: cz-customizable 配置文件
 
 7. .husky: Husky 配置目录, 初始化命令: npx husky install
+
     7.1 'commit-msg': 提交信息检查
+
     7.2 'pre-commit': 提交前执行的命令
 
 ## 参考链接
