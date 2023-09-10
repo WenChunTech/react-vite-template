@@ -1,32 +1,17 @@
-import { useState } from 'react'
+import React from 'react'
+import '@/App.scss'
+import Slider from './slider'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
-          </a>
-          {' | '}
-          <a className="App-link" href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener noreferrer">
-            Vite Docs
-          </a>
-        </p>
-      </header>
+const App: React.FC = () => (
+  <div className="wh-full">
+    <div className="h-5% bg-gray">header</div>
+    <div className="h-95% w-full flex flex-row">
+      <div className="h-full w-30% bg-neutral">
+        <Slider />
+      </div>
+      <div className="h-full w-70% bg-fuchsia">Body</div>
     </div>
-  )
-}
+  </div>
+)
 
 export default App

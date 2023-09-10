@@ -6,18 +6,6 @@ module.exports = {
     'selector-anb-no-unmatchable': false,
     'no-descending-specificity': null,
     'selector-class-pattern': null,
-    'selector-pseudo-class-no-unknown': [
-      true,
-      {
-        ignorePseudoClasses: ['global']
-      }
-    ],
-    'selector-pseudo-element-no-unknown': [
-      true,
-      {
-        ignorePseudoElements: ['v-deep']
-      }
-    ],
     // 禁止使用未知的 at 规则
     'at-rule-no-unknown': [
       true,
